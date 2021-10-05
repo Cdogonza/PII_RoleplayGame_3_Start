@@ -1,14 +1,16 @@
 using System.Collections.Generic;
 namespace RoleplayGame
 {
- public abstract class Characters :ICharacter
+ public abstract class Character :ICharacter
  {
     private int health = 100;
+    
      private List<IItem> items = new List<IItem>();
-    protected Characters(string name)
+    protected Character(string name)
         {
             this.Name = name;
         }
+    
         public int DefenseValue
         {
             get
