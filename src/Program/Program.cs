@@ -7,15 +7,18 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Archer arquero = new Archer("atacado");
-            Smegol enemigo = new Smegol("malo",30);
-            Console.WriteLine(arquero.Health);
-            Console.WriteLine(arquero.VictoryPointsAcumulate);
+           
+            Smeagol enemigo = new Smeagol("EnemyONE");
+            Gozilla enemigo3 = new Gozilla("EnemyTWO");
+            Archer arquero = new Archer("Debil");
+            arquero.AddItem(new Sword());
+            Dwarf enano = new Dwarf("Heroe2");       
+            enemigo.AddItem(new Sword());
             Encounters Batalla = new Encounters(enemigo,arquero);
-
+            Batalla.AddEnemy(enemigo3);
+            Batalla.AddHeroes(enano);
             Batalla.DoEncounters();
-             Console.WriteLine(arquero.Health);
-            Console.WriteLine(arquero.VictoryPointsAcumulate);
+
 
 
             

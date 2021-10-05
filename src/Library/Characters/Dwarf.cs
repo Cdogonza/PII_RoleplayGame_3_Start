@@ -8,6 +8,8 @@ namespace RoleplayGame
             this.Name = name;            
             this.AddItem(new Axe());
             this.AddItem(new Helmet());
+            this.AddItem(new Shield());
+            this.AddItem(new Shield());
         }
 
     }
